@@ -14,7 +14,7 @@ function App() {
 
   return (
     <main className="flex min-h-screen flex-col items-center gap-6 bg-slate-50 px-6 py-12">
-      <nav className="flex gap-1 rounded-md border border-slate-200 bg-white p-1">
+      <nav className="flex gap-2 rounded-md border border-slate-200 bg-white p-1">
         {PAGES.map(({ value, label }) => (
           <button
             key={value}
