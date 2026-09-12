@@ -10,13 +10,9 @@
 - [ ] Documentation
 - [ ] Other
 
-## Changes
-
--
-
 ## Approach
 
-<!-- How was this implemented, and why this approach over alternatives? -->
+<!-- How was this implemented, and why this approach over alternatives? Keep it to the point and easy to understand. -->
 
 ## How to reproduce (remove if not applicable)
 
@@ -27,4 +23,13 @@
 
 ## Testing (remove if not applicable)
 
-<!-- How was this verified? Commands run, manual steps, screenshots, etc. -->
+<!-- How was this verified? Commands run, manual steps, etc. -->
+
+
+## Screenshots (remove if not applicable)
+
+<!-- Before/after screenshots or a screen recording, for UI changes. -->
+
+## Declaration
+
+- [ ] Self-tested this change
