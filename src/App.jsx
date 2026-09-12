@@ -26,7 +26,6 @@ function App() {
                 : 'rounded-md px-3 py-1.5 text-sm font-medium text-slate-500 hover:bg-slate-100'
             }
           >
-            
             {label}
           </button>
         ))}
