@@ -1,30 +1,50 @@
-# React Webview Template
+# testing
 
-A minimal React + Vite + Tailwind CSS starter template with HMR and Oxlint, meant as a clean base for people starting out with web development.
+A small React + Vite + Tailwind CSS demo app with three self-contained
+features: a todo list, a paginated product listing with infinite scroll, and
+an editable user profile dashboard. Data fetching and caching go through
+[TanStack Query](https://tanstack.com/query).
 
-## Getting Started
+## Prerequisites
 
-Scaffold a new project from this template using [degit](https://github.com/Rich-Harris/degit):
+- Node.js and npm installed locally
+
+## Setup
 
 ```sh
-npx degit lokal-app/react-webview-template my-webview-app
-cd my-webview-app
 npm install
-npm run dev
 ```
 
-This template ships with a `CLAUDE.md` defining the project's engineering guidelines (project structure, naming conventions, dependency policy, etc.). If you're using Claude Code, read and follow those rules when building on top of this template.
+## Run / build / test
 
-Currently, two official plugins are available:
+```sh
+npm run dev      # start the Vite dev server
+npm run build    # production build
+npm run preview  # preview the production build locally
+npm run lint     # run oxlint
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+There is currently no automated test suite.
 
-## React Compiler
+## Project structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+├── App.jsx           # top-level page switcher
+├── main.jsx          # app entry point
+├── index.css         # global styles / Tailwind entry
+├── lib/              # shared cross-feature utilities (e.g. the React Query client)
+└── features/
+    ├── todo-list/        # todo list feature (components, hooks)
+    ├── product-listing/  # paginated product listing (components, hooks, services)
+    └── user-dashboard/    # user profile dashboard (components, hooks, services, utils)
+```
 
-## Expanding the Oxlint configuration
+Each feature is self-contained: `components/` for UI, `hooks/` for state and
+data logic, `services/` for API calls (where the feature talks to an API), and
+`utils/` for feature-specific helpers.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# testing
+## Where to look next
+
+- [`CLAUDE.md`](./CLAUDE.md) — engineering guidelines and conventions for this
+  repo (project structure, naming, dependency policy, styling rules).
