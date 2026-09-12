@@ -60,11 +60,13 @@ export function useTodos() {
     persistTodos(todos.filter((todo) => !todo.completed))
   }
 
-  const visibleTodos = todos.filter((todo) => {
-    if (filter === 'active') return !todo.completed
-    if (filter === 'completed') return todo.completed
-    return true
-  })
+  const visibleTodos = todos
+    .filter((todo) => {
+      if (filter === 'active') return !todo.completed
+      if (filter === 'completed') return todo.completed
+      return true
+    })
+    .sort((a, b) => Number(b.important) - Number(a.important))
 
   const activeCount = todos.filter((todo) => !todo.completed).length
 
