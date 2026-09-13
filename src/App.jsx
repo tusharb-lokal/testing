@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState, lazy } from 'react'
 import TodoApp from '@/features/todo-list/components/todo-app'
-import ProductListing from '@/features/product-listing/components/product-listing'
-import UserDashboard from '@/features/user-dashboard/components/user-dashboard'
+const ProductListing = lazy(() => import('@/features/product-listing/components/product-listing'))
+const UserDashboard = lazy(() => import('@/features/user-dashboard/components/user-dashboard'))
 
 const PAGES = [
   { value: 'todos', label: 'Todo List' },
