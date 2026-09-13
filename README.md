@@ -1,5 +1,8 @@
 # testing
 
+<!-- revert-demo: this line is a test change to practice branching, merging, and reverting -->
+
+
 A small React + Vite + Tailwind CSS demo app with three self-contained
 features: a todo list, a paginated product listing with infinite scroll, and
 an editable user profile dashboard. Data fetching and caching go through
