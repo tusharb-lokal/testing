@@ -1,7 +1,11 @@
 # testing
 
+<!-- demo-pr-a: commit 1 of 2 -->
+<!-- demo-pr-a: commit 2 of 2 -->
+
 <!-- demo-pr-b: commit 1 of 2 -->
 <!-- demo-pr-b: commit 2 of 2 -->
+
 
 
 A small React + Vite + Tailwind CSS demo app with three self-contained
