@@ -6,8 +6,6 @@
 <!-- demo-pr-b: commit 1 of 2 -->
 <!-- demo-pr-b: commit 2 of 2 -->
 
-
-
 A small React + Vite + Tailwind CSS demo app with three self-contained
 features: a todo list, a paginated product listing with infinite scroll, and
 an editable user profile dashboard. Data fetching and caching go through
